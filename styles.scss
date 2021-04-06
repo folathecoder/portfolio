@@ -4,13 +4,43 @@
   @return #{$remSize}rem;
 }
 
+// ==== media-queries
+@mixin media-query ($size) {
+  @if $size == desktop {
+      @media screen and (min-width: 1200px) {
+          @content;
+      }
+  }
+  @else if $size == tablet {
+      @media screen and (min-width: 992px) {
+          @content;
+      }
+  } 
+  @else if $size == tablet-mini {
+      @media screen and (min-width: 786px) {
+          @content;
+      }
+  } 
+  @else if $size == large-mobile {
+      @media screen and (min-width: 602px) {
+          @content;
+      }
+  } 
+  @else if $size == mobile {
+      @media screen and (min-width: 550px) {
+          @content;
+      }
+  } 
+}
+
 // ===== font family  
-$font-primary: 'Roboto', sans-serif;
+$font-primary: 'Kanit', sans-serif;
 
 // ==== font weights 
-$weight-heavy: 900;
+$weight-heavy: 800;
 $weight-bold: 700;
 $weight-light: 400;
+$weight-extra-light: 200;
 
 // ==== colors 
 $color-primary: hsl(214,100,50);
@@ -54,6 +84,8 @@ html:focus-within {
 
 a {
   text-decoration: none;
+  font-size: rem(14);
+  font-weight: $weight-light;
 }
 
 img,
@@ -72,4 +104,65 @@ select {
 body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
+    background-color: $color-bg-primary;
+    font-family: $font-primary;
+    color: $color-secondary;
   }
+
+// ==== Hide Content
+
+@include media-query(mobile) {
+  .no-mobile {
+    display: none;
+  }
+}
+@include media-query(tablet) {
+  .no-tablet {
+    display: none;
+  }
+}
+@include media-query(desktop) {
+  .no-desktop {
+    display: none;
+  }
+}
+
+// ==== button
+.btn {
+  background-color: $color-primary;
+  padding: rem(6) rem(16);
+  border-radius: rem(50);
+  color: $color-secondary;
+}
+.btn:hover {
+  transition: 0.5s;
+  padding: rem(7) rem(17);
+}
+
+// ==== Header
+
+header {
+  max-width: 100%;
+  min-height: rem(0);
+  padding: 0px 20px;
+  // background-color: red;
+  border-bottom: $border-primary;
+}
+.header__container {
+  // background-color: yellow;
+  min-height: rem(70);
+  display: flex;
+  align-items: center;
+}
+.logo {
+  flex: 1;
+  a {
+    font-size: rem(28);
+    color: $color-primary;
+    font-weight: $weight-light;
+  }
+}
+.header__button {
+  flex: 1;
+  text-align: right;
+}

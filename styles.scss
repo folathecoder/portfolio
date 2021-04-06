@@ -47,6 +47,7 @@ $color-primary: hsl(214,100,50);
 $color-secondary: hsl(0,0,100);
 $color-bg-primary: hsl(0,0,0);
 $color-bg-secondary: rgb(19, 19, 19);
+$color-logo: rgba(0, 73, 168, 0.993);
 
 // === border 
 $border-primary: 1px solid rgba(196, 196, 196, 0.1);
@@ -158,8 +159,10 @@ header {
   flex: 1;
   a {
     font-size: rem(28);
-    color: $color-primary;
+    color: $color-logo;
     font-weight: $weight-light;
+    border-right: $border-primary;
+    padding-right: rem(15);
   }
 }
 .header__button {

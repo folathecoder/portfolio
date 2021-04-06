@@ -112,8 +112,10 @@ header {
 
 .logo a {
   font-size: 1.75rem;
-  color: #006fff;
+  color: rgba(0, 73, 168, 0.993);
   font-weight: 400;
+  border-right: 1px solid rgba(196, 196, 196, 0.1);
+  padding-right: 0.9375rem;
 }
 
 .header__button {

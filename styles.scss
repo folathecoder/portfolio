@@ -1,0 +1,69 @@
+// ===== font family  
+$font-primary: 'Arvo', serif;
+
+// ==== font weights 
+$weight-heavy: 700;
+$weight-light: 400;
+
+// ==== colors 
+$color-primary: hsl(214,100,50);
+$color-secondary: hsl(0,0,100);
+$color-bg-primary: hsl(0,0,0);
+$color-bg-secondary: rgb(19, 19, 19);
+
+// === border 
+$border-primary: 1px solid rgba(196, 196, 196, 0.1);
+
+ 
+ /* =============== CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+  }

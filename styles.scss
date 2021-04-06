@@ -1,3 +1,9 @@
+// ===== converts pixels to rem
+@function rem($size) {
+  $remSize: $size / 16;
+  @return #{$remSize}rem;
+}
+
 // ===== font family  
 $font-primary: 'Arvo', serif;
 
@@ -65,5 +71,4 @@ select {
 body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
-    line-height: 1.5;
   }

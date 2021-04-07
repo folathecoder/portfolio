@@ -94,6 +94,7 @@ ol[role="list"] {
   list-style: none;
 }
 li {
+  text-decoration: none;
   list-style: none;
 }
 
@@ -342,7 +343,6 @@ header {
     // background-color: yellow;
     max-width: $width-max;
     margin: $center-section;
-    border-bottom: $border-primary;
   }
 
   &__heading {
@@ -375,5 +375,91 @@ header {
   }
   span {
     margin-right: rem(15);
+  }
+}
+
+// ==== Projects
+
+.projects {
+  max-width: 100%;
+  min-height: rem(0);
+  background-color: $color-bg-primary;
+  padding: $section-padding;
+  margin: rem(50) rem(0);
+
+
+  &__container {
+    // background-color: yellow;
+    max-width: $width-max;
+    margin: $center-section;
+  }
+  &__heading {
+    // background-color: black;
+    padding: rem(50) rem(0) rem(50) rem(0);
+  }
+  &__section {
+    margin: rem(0) rem(0);
+    display: grid;
+    gap: rem(15);
+    grid-template-columns: repeat(auto-fit, min-max(1fr, 500px));
+    grid-template-rows: 1fr;
+  }
+}
+
+.project {
+  border: $border-primary;
+  padding: rem(40) rem(25);
+  background-color: $color-bg-secondary;
+
+  &__description {
+    padding-bottom: rem(30);
+  }
+}
+
+.stacks {
+  // background-color: red;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: rem(10) rem(0);
+    min-height: rem(0);
+  }
+
+  li {
+    padding: rem(2) rem(10);
+    box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.438);
+    background-color: $color-primary;
+    // margin-right: rem(10);
+    font-size: rem(12);
+    border-radius: rem(50);
+    margin: rem(7) rem(10) rem(7) rem(0);
+  }
+
+  li:hover {
+    color: $color-secondary;
+    transition: 0.5s;
+    background-color: darken($color-primary, 12%);
+  }
+}
+
+.project__links {
+
+  ul {
+    display: flex;
+  }
+  li {
+    flex: 1;
+    text-align: right;
+  }
+  li:first-of-type {
+    text-align: left;
+    margin-left: rem(-40);
+  }
+  a {
+    text-decoration: underline;
+    color: $color-primary;
+  }
+  i {
+    margin-left: rem(5);
   }
 }

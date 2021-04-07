@@ -26,6 +26,7 @@ ol[role="list"] {
 }
 
 li {
+  text-decoration: none;
   list-style: none;
 }
 
@@ -281,7 +282,6 @@ header {
 .skills__container {
   max-width: 1250px;
   margin: 0px auto;
-  border-bottom: 1px solid rgba(196, 196, 196, 0.1);
 }
 
 .skills__heading {
@@ -315,5 +315,97 @@ header {
 
 .skill span {
   margin-right: 0.9375rem;
+}
+
+.projects {
+  max-width: 100%;
+  min-height: 0rem;
+  background-color: black;
+  padding: 0px 20px;
+  margin: 3.125rem 0rem;
+}
+
+.projects__container {
+  max-width: 1250px;
+  margin: 0px auto;
+}
+
+.projects__heading {
+  padding: 3.125rem 0rem 3.125rem 0rem;
+}
+
+.projects__section {
+  margin: 0rem 0rem;
+  display: -ms-grid;
+  display: grid;
+  gap: 0.9375rem;
+  -ms-grid-columns: (min-max(1fr, 500px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, min-max(1fr, 500px));
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.project {
+  border: 1px solid rgba(196, 196, 196, 0.1);
+  padding: 2.5rem 1.5625rem;
+  background-color: #0c0c0c;
+}
+
+.project__description {
+  padding-bottom: 1.875rem;
+}
+
+.stacks ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0.625rem 0rem;
+  min-height: 0rem;
+}
+
+.stacks li {
+  padding: 0.125rem 0.625rem;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.438);
+          box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.438);
+  background-color: #006fff;
+  font-size: 0.75rem;
+  border-radius: 3.125rem;
+  margin: 0.4375rem 0.625rem 0.4375rem 0rem;
+}
+
+.stacks li:hover {
+  color: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #0054c2;
+}
+
+.project__links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.project__links li {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: right;
+}
+
+.project__links li:first-of-type {
+  text-align: left;
+  margin-left: -2.5rem;
+}
+
+.project__links a {
+  text-decoration: underline;
+  color: #006fff;
+}
+
+.project__links i {
+  margin-left: 0.3125rem;
 }
 /*# sourceMappingURL=styles.css.map */

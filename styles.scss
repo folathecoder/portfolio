@@ -107,6 +107,11 @@ a {
   text-decoration: none;
   font-size: rem(14);
   font-weight: $weight-light;
+
+  @include media-query(desktop) {
+    font-size: rem(16);
+    line-height: rem(25);
+  }
 }
 a:hover {
   transition: 0.5s;
@@ -168,6 +173,19 @@ h1 {
   line-height: rem(60);
   color: $color-primary;
   font-weight: $weight-light;
+
+  @include media-query(large-mobile) {
+    font-size: rem(60);
+    line-height: rem(70);
+  }
+  @include media-query(tablet-mini) {
+    font-size: rem(80);
+    line-height: rem(90);
+  }
+  @include media-query(desktop) {
+    font-size: rem(100);
+    line-height: rem(100);
+  }
 }
 h2 {
   font-size: rem(32);
@@ -177,7 +195,7 @@ h2 {
 }
 h3 {
   font-size: rem(25);
-  line-height: rem(0);
+  line-height: rem(25);
   color: $color-secondary;
   font-weight: $weight-light;
 }
@@ -186,6 +204,11 @@ p {
   line-height: rem(25);
   color: $color-secondary;
   font-weight: $weight-light;
+
+  @include media-query(desktop) {
+    font-size: rem(18);
+    line-height: rem(27);
+  }
 }
 // ==== button
 .btn {
@@ -281,11 +304,23 @@ header {
   // background-color: red;
   padding: $section-padding;
 
+  @include media-query(desktop) {
+    
+  }
+
   &__container {
     // background-color: yellow;
     max-width: $width-max;
     margin: $center-section;
     border-bottom: $border-primary;
+    display: flex;
+    flex-direction: column;
+
+    @include media-query(tablet-mini) {
+      flex-direction: row;
+      align-items: center;
+      padding: rem(100) rem(0);
+    }
   }
 
   &__occupation {
@@ -293,11 +328,19 @@ header {
     // background-color: pink;
     padding: rem(50) rem(0) rem(20) rem(0);
 
+    @include media-query(tablet-mini) {
+      flex: 1;
+    }
+
     h1 span {
       color: $color-secondary;
     }
   }
   &__intro {
+
+    @include media-query(tablet-mini) {
+      flex: 1;
+    }
 
     a {
       font-size: rem(16);
@@ -305,6 +348,21 @@ header {
       color: $color-primary;
       font-weight: $weight-light;
       text-decoration: underline;
+
+      @include media-query(large-mobile) {
+        font-size: rem(17);
+        line-height: rem(26);
+      }
+
+      @include media-query(tablet-mini) {
+        font-size: rem(18);
+        line-height: rem(30);
+      }
+
+      @include media-query(desktop) {
+        font-size: rem(25);
+        line-height: rem(40);
+      }
     }
   }
   &__socials {
@@ -315,10 +373,19 @@ header {
       // background:yellow;
       padding: rem(20) rem(0);
 
+      // @include media-query(large-mobile) {
+      //   display: block; 
+      // }
+
     }
     li {
       flex: 1;
       text-align: left;
+
+      @include media-query(large-mobile) {
+        flex: 0;
+        margin-right: rem(25);
+      }
     }
     i {
       // background:red;
@@ -332,6 +399,50 @@ header {
   margin-top: rem(10);
 }
 
+.no__mobile {
+  display: none;
+
+  @include media-query(tablet-mini) {
+    display: block;
+  }
+}
+.no__desktop {
+  @include media-query(tablet-mini){
+    display: none;
+  }
+
+}
+
+.p__hero {
+  font-size: rem(16);
+  line-height: rem(25);
+  color: $color-secondary;
+  font-weight: $weight-light;
+
+  @include media-query(large-mobile) {
+    font-size: rem(17);
+    line-height: rem(26);
+  }
+
+  @include media-query(tablet-mini) {
+    font-size: rem(18);
+    line-height: rem(30);
+  }
+
+  @include media-query(desktop) {
+    font-size: rem(25);
+    line-height: rem(40);
+  }
+}
+
+.desktop__socials {
+  margin-top: rem(50);
+
+  li {
+    flex: 0;
+    margin-right: rem(30);
+  }
+}
 // ==== Skills & Tools Section
 
 .skills {
@@ -357,6 +468,15 @@ header {
     gap: rem(15);
     grid-template-columns: repeat(auto-fit, min-max(1fr, 500px));
     grid-template-rows: 1fr;
+
+    @include media-query(tablet-mini) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+    }
+    @include media-query(desktop) {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr;
+    }
   }
 }
 
@@ -405,6 +525,15 @@ header {
     gap: rem(15);
     grid-template-columns: repeat(auto-fit, min-max(1fr, 500px));
     grid-template-rows: 1fr;
+
+    @include media-query(tablet-mini) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+    }
+    @include media-query(desktop) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+    }
   }
 }
 
@@ -480,6 +609,15 @@ header {
     max-width: $width-max;
     margin: $center-section;
     padding: rem(50) rem(0);
+
+    @include media-query(tablet-mini) {
+      text-align: center;
+      padding: rem(50) rem(150);
+    }
+    @include media-query(desktop) {
+      padding: rem(50) rem(300);
+    }
+
   }
   h2 {
     line-height: rem(40);

@@ -50,6 +50,7 @@ $weight-extra-light: 200;
 // ==== colors 
 $color-primary: hsl(214,100,50);
 $color-secondary: hsl(0,0,100);
+$color-footer: rgba(255, 255, 255, 0.5);
 $color-bg-primary: hsl(0,0,0);
 $color-bg-secondary: rgb(12, 12, 12);
 $color-logo: rgba(0, 73, 168, 0.993);
@@ -170,7 +171,7 @@ h1 {
 }
 h2 {
   font-size: rem(32);
-  line-height: rem(0);
+  line-height: rem(32);
   color: $color-secondary;
   font-weight: $weight-light;
 }
@@ -274,7 +275,6 @@ header {
 
 .hero {
   position: relative;
-  z-index: -1;
   top: rem(0);
   max-width: 100%;
   min-height: rem(0);
@@ -393,6 +393,7 @@ header {
     // background-color: yellow;
     max-width: $width-max;
     margin: $center-section;
+    padding-bottom: rem(70);
   }
   &__heading {
     // background-color: black;
@@ -463,4 +464,66 @@ header {
   i {
     margin-left: rem(5);
   }
+}
+
+// ==== Call to action
+.cta {
+  max-width: 100%;
+  min-height: rem(0);
+  // background-color: red;
+  padding: $section-padding;
+  margin: rem(20) rem(0);
+
+
+  &__container {
+    // background-color: yellow;
+    max-width: $width-max;
+    margin: $center-section;
+    padding: rem(50) rem(0);
+  }
+  h2 {
+    line-height: rem(40);
+  }
+
+  a {
+    font-size: rem(16);
+    line-height: rem(20);
+    color: $color-primary;
+    font-weight: $weight-light;
+    text-decoration: underline;
+  }
+  p{
+    margin: rem(20) rem(0);
+    letter-spacing: 1px;
+  }
+}
+
+// ===== Footer 
+
+footer {
+  bottom: 0;
+  max-width: 100%;
+  min-height: rem(0);
+  background-color: $color-bg-primary;
+  padding: $section-padding;
+  border-top: $border-primary;
+  // margin: rem(50) rem(0);
+  // display: flex;
+  // align-content: center;
+
+}
+
+.footer__container {
+    // background-color: yellow;
+    max-width: $width-max;
+    margin: $center-section;
+    padding: rem(20) rem(0);
+    // display: flex;
+    // align-content: center;
+
+    p {
+      font-size: rem(13);
+      color: $color-footer;
+      font-weight: $weight-extra-light;
+    }
 }

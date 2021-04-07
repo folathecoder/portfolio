@@ -105,7 +105,7 @@ h1 {
 
 h2 {
   font-size: 2rem;
-  line-height: 0rem;
+  line-height: 2rem;
   color: white;
   font-weight: 400;
 }
@@ -222,7 +222,6 @@ header {
 
 .hero {
   position: relative;
-  z-index: -1;
   top: 0rem;
   max-width: 100%;
   min-height: 0rem;
@@ -329,6 +328,7 @@ header {
 .projects__container {
   max-width: 1250px;
   margin: 0px auto;
+  padding-bottom: 4.375rem;
 }
 
 .projects__heading {
@@ -408,5 +408,56 @@ header {
 
 .project__links i {
   margin-left: 0.3125rem;
+}
+
+.cta {
+  max-width: 100%;
+  min-height: 0rem;
+  padding: 0px 20px;
+  margin: 1.25rem 0rem;
+}
+
+.cta__container {
+  max-width: 1250px;
+  margin: 0px auto;
+  padding: 3.125rem 0rem;
+}
+
+.cta h2 {
+  line-height: 2.5rem;
+}
+
+.cta a {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  color: #006fff;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.cta p {
+  margin: 1.25rem 0rem;
+  letter-spacing: 1px;
+}
+
+footer {
+  bottom: 0;
+  max-width: 100%;
+  min-height: 0rem;
+  background-color: black;
+  padding: 0px 20px;
+  border-top: 1px solid rgba(196, 196, 196, 0.1);
+}
+
+.footer__container {
+  max-width: 1250px;
+  margin: 0px auto;
+  padding: 1.25rem 0rem;
+}
+
+.footer__container p {
+  font-size: 0.8125rem;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 200;
 }
 /*# sourceMappingURL=styles.css.map */

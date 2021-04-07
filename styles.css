@@ -135,6 +135,7 @@ p {
 }
 
 .btn:hover {
+  color: white;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   background-color: #0054c2;

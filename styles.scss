@@ -191,6 +191,7 @@ p {
   }
 }
 .btn:hover {
+  color: $color-secondary;
   transition: 0.5s;
   background-color: darken($color-primary, 12%);
 }

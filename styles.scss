@@ -53,7 +53,6 @@ $color-secondary: hsl(0,0,100);
 $color-footer: rgba(255, 255, 255, 0.5);
 $color-bg-primary: hsl(0,0,0);
 $color-bg-secondary: rgb(12, 12, 12);
-$color-logo: rgba(0, 73, 168, 0.993);
 
 // === border 
 $border-primary: 1px solid rgba(196, 196, 196, 0.1);
@@ -274,7 +273,7 @@ header {
   flex: 1;
   a {
     font-size: rem(28);
-    color: $color-logo;
+    color: $color-primary;
     font-weight: $weight-light;
     border-right: $border-primary;
     padding-right: rem(15);

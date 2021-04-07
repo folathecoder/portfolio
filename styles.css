@@ -129,6 +129,11 @@ p {
   }
 }
 
+.btn i {
+  color: white;
+  margin-left: 0.3125rem;
+}
+
 .btn:hover {
   -webkit-transition: 0.5s;
   transition: 0.5s;

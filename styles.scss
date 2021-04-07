@@ -184,6 +184,11 @@ p {
     padding: rem(12) rem(50);
     font-size: rem(16);
   }
+
+  i {
+    color: $color-secondary;
+    margin-left: rem(5);
+  }
 }
 .btn:hover {
   transition: 0.5s;

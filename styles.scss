@@ -138,6 +138,7 @@ body {
     background-color: $color-bg-secondary;
     font-family: $font-primary;
     color: $color-secondary;
+    position: relative;
   }
 
 // ==== Hide Content
@@ -226,11 +227,14 @@ hr {
 // ==== Header
 
 header {
-  max-width: 100%;
+  position: sticky;
+  top: 0px;
+  width: 100%;
   min-height: rem(0);
   padding: $section-padding;
-  // background-color: red;
+  background-color: $color-bg-secondary;
   border-bottom: $border-primary;
+  z-index: 1;
 }
 .header__container {
   // background-color: yellow;
@@ -267,6 +271,9 @@ header {
 // ==== Hero
 
 .hero {
+  position: relative;
+  z-index: -1;
+  top: rem(0);
   max-width: 100%;
   min-height: rem(0);
   // background-color: red;

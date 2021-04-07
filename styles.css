@@ -74,6 +74,7 @@ body {
   background-color: #0c0c0c;
   font-family: "Kanit", sans-serif;
   color: white;
+  position: relative;
 }
 
 @media screen and (min-width: 300px) {
@@ -166,10 +167,15 @@ hr {
 }
 
 header {
-  max-width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  width: 100%;
   min-height: 0rem;
   padding: 0px 20px;
+  background-color: #0c0c0c;
   border-bottom: 1px solid rgba(196, 196, 196, 0.1);
+  z-index: 1;
 }
 
 .header__container {
@@ -213,6 +219,9 @@ header {
 }
 
 .hero {
+  position: relative;
+  z-index: -1;
+  top: 0rem;
   max-width: 100%;
   min-height: 0rem;
   padding: 0px 20px;

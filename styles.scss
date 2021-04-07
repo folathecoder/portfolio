@@ -52,6 +52,16 @@ $color-logo: rgba(0, 73, 168, 0.993);
 // === border 
 $border-primary: 1px solid rgba(196, 196, 196, 0.1);
 
+// ==== max-width
+$width-max: 1250px;
+
+// ==== center section
+$center-section: 0px auto;
+
+// === section padding
+
+$section-padding: 0px 20px;
+
  
  /* =============== CSS Reset */
 *,
@@ -78,6 +88,9 @@ ul[role="list"],
 ol[role="list"] {
   list-style: none;
 }
+li {
+  list-style: none;
+}
 
 html:focus-within {
   scroll-behavior: smooth;
@@ -87,6 +100,18 @@ a {
   text-decoration: none;
   font-size: rem(14);
   font-weight: $weight-light;
+}
+a:hover {
+  transition: 0.5s;
+  color: darken($color-primary, 12%);
+}
+
+i {
+  color: $color-primary;
+}
+i:hover {
+  transition: 0.5s;
+  color: darken($color-primary, 12%);
 }
 
 img,
@@ -128,16 +153,41 @@ body {
   }
 }
 
+// ==== typography 
+
+h1 {
+  font-size: rem(60);
+  line-height: rem(60);
+  color: $color-primary;
+  font-weight: $weight-heavy;
+}
+p {
+  font-size: rem(16);
+  line-height: rem(25);
+  color: $color-secondary;
+  font-weight: $weight-light;
+}
 // ==== button
 .btn {
+
   background-color: $color-primary;
-  padding: rem(6) rem(16);
+  padding: rem(7) rem(20);
   border-radius: rem(50);
   color: $color-secondary;
+
+  @include media-query(tablet) {
+    padding: rem(10) rem(45);
+    font-size: rem(16);
+  }
+  
+  @include media-query(desktop) {
+    padding: rem(12) rem(50);
+    font-size: rem(16);
+  }
 }
 .btn:hover {
   transition: 0.5s;
-  padding: rem(7) rem(17);
+  background-color: darken($color-primary, 12%);
 }
 
 // ==== Header
@@ -145,12 +195,14 @@ body {
 header {
   max-width: 100%;
   min-height: rem(0);
-  padding: 0px 20px;
+  padding: $section-padding;
   // background-color: red;
   border-bottom: $border-primary;
 }
 .header__container {
   // background-color: yellow;
+  max-width: $width-max;
+  margin: $center-section;
   min-height: rem(70);
   display: flex;
   align-items: center;
@@ -168,4 +220,63 @@ header {
 .header__button {
   flex: 1;
   text-align: right;
+}
+
+// ==== Hero
+
+.hero {
+  max-width: 100%;
+  min-height: rem(0);
+  // background-color: red;
+  padding: $section-padding;
+
+  &__container {
+    // background-color: yellow;
+    max-width: $width-max;
+    margin: $center-section;
+    border-bottom: $border-primary;
+  }
+
+  &__occupation {
+    min-height: rem(0);
+    // background-color: pink;
+    padding: rem(50) rem(0) rem(20) rem(0);
+
+    h1 span {
+      color: $color-secondary;
+    }
+  }
+  &__intro {
+
+    a {
+      font-size: rem(16);
+      line-height: rem(20);
+      color: $color-primary;
+      font-weight: $weight-light;
+      text-decoration: underline;
+    }
+  }
+  &__socials {
+    // background:red;
+
+    ul {
+      display: flex;
+      // background:yellow;
+      padding: rem(20) rem(0);
+
+    }
+    li {
+      flex: 1;
+      text-align: left;
+    }
+    i {
+      // background:red;
+      font-size: rem(40);
+  
+      // margin-right: rem(30);
+    }
+  }
+}
+.para-mg-top {
+  margin-top: rem(10);
 }

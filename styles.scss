@@ -27,10 +27,15 @@
       }
   } 
   @else if $size == mobile {
-      @media screen and (min-width: 550px) {
+      @media screen and (min-width: 300px) {
           @content;
       }
   } 
+  @else if $size == mobile-mini {
+    @media screen and (min-width: 300px) {
+        @content;
+    }
+} 
 }
 
 // ===== font family  
@@ -46,7 +51,7 @@ $weight-extra-light: 200;
 $color-primary: hsl(214,100,50);
 $color-secondary: hsl(0,0,100);
 $color-bg-primary: hsl(0,0,0);
-$color-bg-secondary: rgb(19, 19, 19);
+$color-bg-secondary: rgb(12, 12, 12);
 $color-logo: rgba(0, 73, 168, 0.993);
 
 // === border 
@@ -130,7 +135,7 @@ select {
 body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
-    background-color: $color-bg-primary;
+    background-color: $color-bg-secondary;
     font-family: $font-primary;
     color: $color-secondary;
   }
@@ -156,10 +161,22 @@ body {
 // ==== typography 
 
 h1 {
-  font-size: rem(60);
+  font-size: rem(50);
   line-height: rem(60);
   color: $color-primary;
-  font-weight: $weight-heavy;
+  font-weight: $weight-light;
+}
+h2 {
+  font-size: rem(32);
+  line-height: rem(0);
+  color: $color-secondary;
+  font-weight: $weight-light;
+}
+h3 {
+  font-size: rem(25);
+  line-height: rem(0);
+  color: $color-secondary;
+  font-weight: $weight-light;
 }
 p {
   font-size: rem(16);
@@ -196,6 +213,16 @@ p {
   background-color: darken($color-primary, 12%);
 }
 
+hr {
+  color: $color-primary;
+  background-color: $color-primary;
+  height: rem(4);
+  width: rem(100);
+  margin: rem(25) rem(0) rem(0) rem(-0);
+  text-align: left;
+  border-radius: rem(50);
+}
+
 // ==== Header
 
 header {
@@ -224,8 +251,17 @@ header {
   }
 }
 .header__button {
-  flex: 1;
+  flex: 6;
   text-align: right;
+  display: none;
+
+  // @include media-query(mobile-mini) {
+  //   display: none;
+  // }
+
+  @include media-query(mobile) {
+    display: block;
+  }
 }
 
 // ==== Hero
@@ -285,4 +321,52 @@ header {
 }
 .para-mg-top {
   margin-top: rem(10);
+}
+
+// ==== Skills & Tools Section
+
+.skills {
+  max-width: 100%;
+  min-height: rem(0);
+  // background-color: red;
+  padding: $section-padding;
+
+  &__container {
+    // background-color: yellow;
+    max-width: $width-max;
+    margin: $center-section;
+    border-bottom: $border-primary;
+  }
+
+  &__heading {
+    // background-color: black;
+    padding: rem(70) rem(0) rem(50) rem(0);
+  }
+  
+  &__section {
+    margin: rem(0) rem(0);
+    display: grid;
+    gap: rem(15);
+    grid-template-columns: repeat(auto-fit, min-max(1fr, 500px));
+    grid-template-rows: 1fr;
+  }
+}
+
+.skill {
+  border: $border-primary;
+  border-radius: rem(50);
+  padding: rem(25);
+  
+  // h3 {
+  //   margin: rem(20) rem(0) rem(25) rem(0);
+  // }
+  p {
+    margin-top: rem(20);
+  }
+  i {
+    font-size: rem(30);
+  }
+  span {
+    margin-right: rem(15);
+  }
 }

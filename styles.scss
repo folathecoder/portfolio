@@ -262,7 +262,6 @@ header {
   z-index: 1;
 }
 .header__container {
-  // background-color: yellow;
   max-width: $width-max;
   margin: $center-section;
   min-height: rem(70);
@@ -284,10 +283,6 @@ header {
   text-align: right;
   display: none;
 
-  // @include media-query(mobile-mini) {
-  //   display: none;
-  // }
-
   @include media-query(mobile) {
     display: block;
   }
@@ -300,7 +295,6 @@ header {
   top: rem(0);
   max-width: 100%;
   min-height: rem(0);
-  // background-color: red;
   padding: $section-padding;
 
   @include media-query(desktop) {
@@ -308,7 +302,6 @@ header {
   }
 
   &__container {
-    // background-color: yellow;
     max-width: $width-max;
     margin: $center-section;
     border-bottom: $border-primary;
@@ -324,13 +317,11 @@ header {
 
   &__occupation {
     min-height: rem(0);
-    // background-color: pink;
     padding: rem(50) rem(0) rem(20) rem(0);
 
     @include media-query(tablet-mini) {
       flex: 1;
     }
-
     h1 span {
       color: $color-secondary;
     }
@@ -365,17 +356,10 @@ header {
     }
   }
   &__socials {
-    // background:red;
 
     ul {
       display: flex;
-      // background:yellow;
       padding: rem(20) rem(0);
-
-      // @include media-query(large-mobile) {
-      //   display: block; 
-      // }
-
     }
     li {
       flex: 1;
@@ -387,17 +371,13 @@ header {
       }
     }
     i {
-      // background:red;
       font-size: rem(40);
-  
-      // margin-right: rem(30);
     }
   }
 }
 .para-mg-top {
   margin-top: rem(10);
 }
-
 .no__mobile {
   display: none;
 
@@ -409,9 +389,7 @@ header {
   @include media-query(tablet-mini){
     display: none;
   }
-
 }
-
 .p__hero {
   font-size: rem(16);
   line-height: rem(25);
@@ -442,22 +420,20 @@ header {
     margin-right: rem(30);
   }
 }
+
 // ==== Skills & Tools Section
 
 .skills {
   max-width: 100%;
   min-height: rem(0);
-  // background-color: red;
   padding: $section-padding;
 
   &__container {
-    // background-color: yellow;
     max-width: $width-max;
     margin: $center-section;
   }
 
   &__heading {
-    // background-color: black;
     padding: rem(70) rem(0) rem(50) rem(0);
   }
   
@@ -484,9 +460,6 @@ header {
   border-radius: rem(50);
   padding: rem(25);
   
-  // h3 {
-  //   margin: rem(20) rem(0) rem(25) rem(0);
-  // }
   p {
     margin-top: rem(20);
   }
@@ -547,7 +520,6 @@ header {
 }
 
 .stacks {
-  // background-color: red;
   ul {
     display: flex;
     flex-wrap: wrap;
@@ -559,7 +531,6 @@ header {
     padding: rem(2) rem(10);
     box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.438);
     background-color: $color-primary;
-    // margin-right: rem(10);
     font-size: rem(12);
     border-radius: rem(50);
     margin: rem(7) rem(10) rem(7) rem(0);
@@ -598,13 +569,11 @@ header {
 .cta {
   max-width: 100%;
   min-height: rem(0);
-  // background-color: red;
   padding: $section-padding;
   margin: rem(20) rem(0);
 
 
   &__container {
-    // background-color: yellow;
     max-width: $width-max;
     margin: $center-section;
     padding: rem(50) rem(0);
@@ -644,19 +613,12 @@ footer {
   background-color: $color-bg-primary;
   padding: $section-padding;
   border-top: $border-primary;
-  // margin: rem(50) rem(0);
-  // display: flex;
-  // align-content: center;
-
 }
 
 .footer__container {
-    // background-color: yellow;
     max-width: $width-max;
     margin: $center-section;
     padding: rem(20) rem(0);
-    // display: flex;
-    // align-content: center;
 
     p {
       font-size: rem(13);

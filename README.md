@@ -10,7 +10,7 @@ Contact me directly via:
 - [Twitter](https://twitter.com/folathecoder)
 - [LinkedIn](https://linkedin.com/in/akinloye-folarin)
 
-I mentor and take up challenges on frontendmentor.io
+I give other developers feedbacks and take up challenges on frontendmentor.io
 
 - [Frontendmentor Profile](https://www.frontendmentor.io/profile/folathecoder)
 

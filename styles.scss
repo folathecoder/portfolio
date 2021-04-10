@@ -242,6 +242,30 @@ hr {
   border-color: $color-primary;
 }
 
+
+// ======= Accessibility Settings
+
+a:focus {
+  outline: rem(3) solid hsl(60, 100%, 50%);   
+}
+
+.skip__links {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  a {
+    position: absolute;
+    top: rem(-3);
+    color: $color-secondary;
+    padding: rem(2);
+  }
+
+  a:focus {
+    top: 0;
+  }
+}
+
 // ==== Header Section 
 
 header {

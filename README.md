@@ -1,6 +1,6 @@
-## Welcome T0 My Portfolio! 👋
+## Welcome To My Portfolio! 👋
 
-Thanks for checking out my portfolio. Feel free to download and explore my [CV](https://folathecoder.github.io/portfolio-V1/folarin-akinloye-cv)!
+Thanks for checking out my portfolio. Feel free to download and explore my [Frontend Developer CV](https://folathecoder.github.io/portfolio-V1/folarin-akinloye-cv)!
 
 I am available to join your tech team!  💪💪
 

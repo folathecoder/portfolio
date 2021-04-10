@@ -1,4 +1,5 @@
 // ===== converts pixels to rem
+
 @function rem($size) {
   $remSize: $size / 16;
   @return #{$remSize}rem;
@@ -39,9 +40,11 @@
 }
 
 // ===== font family  
+
 $font-primary: 'Kanit', sans-serif;
 
 // ==== font weights 
+
 $weight-heavy: 800;
 $weight-bold: 700;
 $weight-light: 400;
@@ -55,12 +58,15 @@ $color-bg-primary: hsl(0,0,0);
 $color-bg-secondary: rgb(12, 12, 12);
 
 // === border 
+
 $border-primary: 1px solid rgba(196, 196, 196, 0.1);
 
 // ==== max-width
+
 $width-max: 1250px;
 
 // ==== center section
+
 $center-section: 0px auto;
 
 // === section padding
@@ -68,7 +74,8 @@ $center-section: 0px auto;
 $section-padding: 0px 20px;
 
  
- /* =============== CSS Reset */
+ /* ========================= CSS Reset */
+
 *,
 *::before,
 *::after {
@@ -120,6 +127,7 @@ a:hover {
 i {
   color: $color-primary;
 }
+
 i:hover {
   transition: 0.5s;
   color: darken($color-primary, 12%);
@@ -146,24 +154,6 @@ body {
     color: $color-secondary;
     position: relative;
   }
-
-// ==== Hide Content
-
-@include media-query(mobile) {
-  .no-mobile {
-    display: none;
-  }
-}
-@include media-query(tablet) {
-  .no-tablet {
-    display: none;
-  }
-}
-@include media-query(desktop) {
-  .no-desktop {
-    display: none;
-  }
-}
 
 // ==== typography 
 
@@ -209,7 +199,9 @@ p {
     line-height: rem(27);
   }
 }
+
 // ==== button
+
 .btn {
 
   background-color: $color-primary;
@@ -232,6 +224,7 @@ p {
     margin-left: rem(5);
   }
 }
+
 .btn:hover {
   color: $color-secondary;
   transition: 0.5s;
@@ -249,7 +242,7 @@ hr {
   border-color: $color-primary;
 }
 
-// ==== Header
+// ==== Header Section 
 
 header {
   position: sticky;
@@ -288,7 +281,7 @@ header {
   }
 }
 
-// ==== Hero
+// ==== Hero Section 
 
 .hero {
   position: relative;
@@ -604,7 +597,7 @@ header {
   }
 }
 
-// ===== Footer 
+// ===== Footer Section
 
 footer {
   bottom: 0;
@@ -626,3 +619,8 @@ footer {
       font-weight: $weight-extra-light;
     }
 }
+
+
+// I kept things simple with the UI, I avoided using distracting animations and pop ups. My goal was to allow a recruiter glance through my portfolio under 20 seconds. 
+
+// I got the UI inspiration from https://eth2.ankr.com/ and some mockups on Pinterest. 

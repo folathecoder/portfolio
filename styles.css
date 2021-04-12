@@ -189,22 +189,6 @@ a:focus {
   outline: 0.1875rem solid yellow;
 }
 
-.skip__links {
-  margin: 0;
-}
-
-.skip__links a {
-  position: absolute;
-  top: -1.875rem;
-  color: white;
-  padding: 0rem 0.625rem;
-}
-
-.skip__links a:focus {
-  position: relative;
-  top: 0;
-}
-
 header {
   position: -webkit-sticky;
   position: sticky;
@@ -568,13 +552,6 @@ header {
   font-size: 0.75rem;
   border-radius: 3.125rem;
   margin: 0.4375rem 0.625rem 0.4375rem 0rem;
-}
-
-.stacks li:hover {
-  color: white;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  background-color: #0054c2;
 }
 
 .project__links ul {

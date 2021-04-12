@@ -38,13 +38,6 @@
 
 <body>
 
-    <!-- ========== SKIP LINKS TO SECTIONS OF THE PAGE ========== -->
-    <ul class="skip__links">
-        <li><a href="#skill__skip">Skip To My Skills & Tools</a></li>
-        <li><a href="#projects__skip">Skip To My Projects</a></li>
-        <li><a href="#cta__skip">Skip to My Contact Information</a></li>
-    </ul>
-
     <!-- ========== HEADER SECTION ========== -->
     <header>
         <div class="header__container" id="top">
@@ -57,244 +50,263 @@
     </header>
 
     <!-- ========== HERO SECTION ========== -->
-    <section class="hero">
-        <div class="hero__container">
-            <div class="hero__occupation">
-                <h1>Frontend <br><span>Developer.</span></h1>
+    <main>
+        <section class="hero">
+            <div class="hero__container">
+                <div class="hero__occupation">
+                    <h1>Frontend <br><span>Developer.</span></h1>
 
-                <!-- =========== ONLY VISIBLE ON TABLET AND DESKTOP ========== -->
-                <div class="hero__socials no__mobile desktop__socials">
+                    <!-- =========== ONLY VISIBLE ON TABLET AND DESKTOP ========== -->
+                    <div class="hero__socials no__mobile desktop__socials">
+                        <ul>
+                            <li><a href="https://github.com/folathecoder" target="_blank"
+                                    aria-label="explore my projects on github"><i class="fab fa-github"></i></a>
+                            </li>
+                            <li><a href="https://linkedin.com/in/akinloye-folarin" target="_blank"
+                                    aria-label="contact me via linkedin"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="https://twitter.com/folathecoder" target="_blank"
+                                    aria-label="contact me via twitter"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li><a href="mailto:folathecoder@gmail.com" target="_blank"
+                                    aria-label="contact me via email"><i class="fas fa-envelope"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="hero__intro">
+                    <p class="p__hero">I'm Folarin Akinloye, a frontend developer and web accessibility advocate based
+                        in
+                        Nigeria, Africa. I
+                        enjoy building accessible, functional, and responsive web interfaces that scales.</p>
+                    <p class="para-mg-top p__hero">I'm currently taking freelance web development gigs on <span><a
+                                href="https://www.fiverr.com/folathecoder" target="_blank"
+                                aria-label="hire me on fiverr">Fiverr</a></span>.</p>
+                </div>
+
+                <!-- ========== NOT VISIBLE ON TABLET AND DESKTOP ========== -->
+                <div class="hero__socials no__desktop">
                     <ul>
-                        <li><a href="https://github.com/folathecoder" target="_blank" aria-label="explore my projects on github"><i class="fab fa-github"></i></a>
+                        <li><a href="https://github.com/folathecoder" target="_blank"
+                                aria-label="explore my projects on github"><i class="fab fa-github"></i></a></li>
+                        <li><a href="https://linkedin.com/in/akinloye-folarin" target="_blank"
+                                aria-label="contact me via linkedin"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a href="https://twitter.com/folathecoder" target="_blank"
+                                aria-label="contact me via twitter"><i class="fab fa-twitter"></i></a>
                         </li>
-                        <li><a href="https://linkedin.com/in/akinloye-folarin" target="_blank" aria-label="contact me via linkedin"><i
-                                    class="fab fa-linkedin"></i></a></li>
-                        <li><a href="https://twitter.com/folathecoder" target="_blank" aria-label="contact me via twitter"><i
-                                    class="fab fa-twitter"></i></a>
-                        </li>
-                        <li><a href="mailto:folathecoder@gmail.com" target="_blank" aria-label="contact me via email"><i class="fas fa-envelope"></i></a>
-                        </li>
+                        <li><a href="mailto:folathecoder@gmail.com" target="_blank" aria-label="contact me via email"><i
+                                    class="fas fa-envelope"></i></a></li>
                     </ul>
                 </div>
             </div>
-            <div class="hero__intro">
-                <p class="p__hero">I'm Folarin Akinloye, a frontend developer and web accessibility advocate based in
-                    Nigeria, Africa. I
-                    enjoy building accessible, functional, and responsive web interfaces that scales.</p>
-                <p class="para-mg-top p__hero">I'm currently taking freelance web development gigs on <span><a
-                            href="https://www.fiverr.com/folathecoder" target="_blank" aria-label="hire me on fiverr">Fiverr</a></span>.</p>
-            </div>
+        </section>
 
-            <!-- ========== NOT VISIBLE ON TABLET AND DESKTOP ========== -->
-            <div class="hero__socials no__desktop">
-                <ul>
-                    <li><a href="https://github.com/folathecoder" target="_blank" aria-label="explore my projects on github"><i class="fab fa-github"></i></a></li>
-                    <li><a href="https://linkedin.com/in/akinloye-folarin" target="_blank" aria-label="contact me via linkedin"><i
-                                class="fab fa-linkedin"></i></a></li>
-                    <li><a href="https://twitter.com/folathecoder" target="_blank" aria-label="contact me via twitter"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li><a href="mailto:folathecoder@gmail.com" target="_blank" aria-label="contact me via email"><i
-                                class="fas fa-envelope"></i></a></li>
-                </ul>
+        <!-- ========== SKILLS & TOOLS SECTION ========== -->
+        <section class="skills" id="skill__skip">
+            <div class="skills__container">
+                <div class="skills__heading">
+                    <h2>Skills & Tools</h2>
+                    <hr>
+                </div>
+                <div class="skills__section">
+                    <div class="skill">
+                        <h3><span><i class="fab fa-html5"></i></span>HTML</h3>
+                        <p>Industry standard markup practices with BEM naming convention.</p>
+                    </div>
+                    <div class="skill">
+                        <h3><span><i class="fab fa-css3-alt"></i></span>CSS</h3>
+                        <p>Responsive layout execution using dry, maintainable, and reusable code.</p>
+                    </div>
+                    <div class="skill">
+                        <h3><span><i class="fab fa-sass"></i></span>SASS/SCSS</h3>
+                        <p>Advance use of pre-processor power to deliver scalable products.</p>
+                    </div>
+                    <div class="skill">
+                        <h3><span><i class="fab fa-accessible-icon"></i></span>Web Accessibility</h3>
+                        <p>Creation of accessible markups that makes the web useable by all.</p>
+                    </div>
+                    <div class="skill">
+                        <h3><span><i class="fab fa-searchengin"></i></span>SEO</h3>
+                        <p>Analysis, audit, and implementation of on-page SEO properties.</p>
+                    </div>
+                    <div class="skill">
+                        <h3><span><i class="fab fa-wordpress"></i></span>WordPress</h3>
+                        <p>Creation and debugging of web pages using CMS page builders, plugins, and themes.</p>
+                    </div>
+                    <div class="skill">
+                        <h3><span><i class="fab fa-git-square"></i></span>Git/Github</h3>
+                        <p>Deployment, maintenance, and management of code base using version control.</p>
+                    </div>
+                    <div class="skill">
+                        <h3><span><i class="fab fa-js"></i></span>JavaScript</h3>
+                        <p>Advance use of Vanilla JS to create programs and manipulate web pages. </p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ========== SKILLS & TOOLS SECTION ========== -->
-    <section class="skills" id="skill__skip">
-        <div class="skills__container">
-            <div class="skills__heading">
-                <h2>Skills & Tools</h2>
-                <hr>
+        <!-- ========== PROJECT SECTION ========== -->
+        <section class="projects" id="projects__skip">
+            <div class="projects__container">
+                <div class="projects__heading">
+                    <h2>Projects</h2>
+                    <hr>
+                </div>
+                <div class="projects__section">
+                    <div class="project">
+                        <div class="project__left">
+                            <h3>Chat App Landing Page</h3>
+                            <div class="stacks">
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>SCSS</li>
+                                    <li>RESPONSIVE</li>
+                                    <li>SEO</li>
+                                    <li>ANIMATE.CSS</li>
+                                    <li>CSS-ILLUSTRATION</li>
+                                </ul>
+                            </div>
+                            <div class="project__description">
+                                <p>This is a simple-looking, but complex animated landing page with a chat app
+                                    illustration
+                                    built with CSS.</p>
+                            </div>
+                        </div>
+                        <div class="project__right">
+                            <img src="images/project-1.jpg" alt="a mockup of chat app landing page">
+                            <div class="project__links">
+                                <ul>
+                                    <li><a href="https://folathecoder.github.io/chat-app-landing-page/" target="_blank"
+                                            aria-label="visit live project">LIVE
+                                            SITE<span><i class="fas fa-external-link-alt"></i></span></a></li>
+                                    <li><a href="https://github.com/folathecoder/chat-app-landing-page" target="_blank"
+                                            aria-label="view github repo">GITHUB<span><i
+                                                    class="fas fa-external-link-alt"></i></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project__left">
+                            <h3>Huddle Landing Page</h3>
+                            <div class="stacks">
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>RESPONSIVE</li>
+                                    <li>ACCESSIBLE</li>
+                                    <li>SEO</li>
+                                    <li>MOBILE-FIRST</li>
+                                </ul>
+                            </div>
+                            <div class="project__description">
+                                <p>This is a mobile-first landing page strategically implemented using CSS Flexbox and
+                                    Grid
+                                    layout system.</p>
+                            </div>
+                        </div>
+                        <div class="project__right">
+                            <img src="images/project-2.jpg" alt="a mockup of huddle landing page">
+                            <div class="project__links">
+                                <ul>
+                                    <li><a href="https://folathecoder.github.io/huddle-landing-page/" target="_blank"
+                                            aria-label="visit live project">LIVE
+                                            SITE<span><i class="fas fa-external-link-alt"></i></span></a></li>
+                                    <li><a href="https://github.com/folathecoder/huddle-landing-page" target="_blank"
+                                            aria-label="view github repo">GITHUB<span><i
+                                                    class="fas fa-external-link-alt"></i></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project__left">
+                            <h3>Clipboard Landing Page</h3>
+                            <div class="stacks">
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>SCSS</li>
+                                    <li>GIT</li>
+                                    <li>RESPONSIVE WEB</li>
+                                    <li>SEO</li>
+                                </ul>
+                            </div>
+                            <div class="project__description">
+                                <p>A responsive landing page built and maintained using SCSS. This page required advance
+                                    use of Flexbox.</p>
+                            </div>
+                        </div>
+                        <div class="project__right">
+                            <img src="images/project-3.jpg" alt="a mockup of clipboard landing page">
+                            <div class="project__links">
+                                <ul>
+                                    <li><a href="https://folathecoder.github.io/clipboard-landing-page-master/"
+                                            target="_blank" aria-label="visit live project">LIVE SITE<span><i
+                                                    class="fas fa-external-link-alt"></i></span></a></li>
+                                    <li><a href="https://github.com/folathecoder/clipboard-landing-page-master"
+                                            target="_blank" aria-label="view github repo">GITHUB<span><i
+                                                    class="fas fa-external-link-alt"></i></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <div class="project__left">
+                            <h3>Fylo Landing Page</h3>
+                            <div class="stacks">
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>SCSS/SASS</li>
+                                    <li>SEO</li>
+                                    <li>RESPONSIVE WEB</li>
+                                    <li>FORMS</li>
+                                    <li>GIT</li>
+                                </ul>
+                            </div>
+                            <div class="project__description">
+                                <p>A desktop-first opitimized landing page built with Flexbox and CSS Grid.
+                                    Responsiveness
+                                    was implmented using SCSS.</p>
+                            </div>
+                        </div>
+                        <div class="project__right">
+                            <img src="images/project-4.jpg" alt="a mockup of fylo landing page">
+                            <div class="project__links">
+                                <ul>
+                                    <li><a href="https://folathecoder.github.io/fylo-landing-page/" target="_blank"
+                                            aria-label="visit live project">LIVE
+                                            SITE<span><i class="fas fa-external-link-alt"></i></span></a></li>
+                                    <li><a href="https://github.com/folathecoder/fylo-landing-page" target="_blank"
+                                            aria-label="view github repo">GITHUB<span><i
+                                                    class="fas fa-external-link-alt"></i></span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="skills__section">
-                <div class="skill">
-                    <h3><span><i class="fab fa-html5"></i></span>HTML</h3>
-                    <p>Industry standard markup practices with BEM naming convention.</p>
-                </div>
-                <div class="skill">
-                    <h3><span><i class="fab fa-css3-alt"></i></span>CSS</h3>
-                    <p>Responsive layout execution using dry, maintainable, and reusable code.</p>
-                </div>
-                <div class="skill">
-                    <h3><span><i class="fab fa-sass"></i></span>SASS/SCSS</h3>
-                    <p>Advance use of pre-processor power to deliver scalable products.</p>
-                </div>
-                <div class="skill">
-                    <h3><span><i class="fab fa-accessible-icon"></i></span>Web Accessibility</h3>
-                    <p>Creation of accessible markups that makes the web useable by all.</p>
-                </div>
-                <div class="skill">
-                    <h3><span><i class="fab fa-searchengin"></i></span>SEO</h3>
-                    <p>Analysis, audit, and implementation of on-page SEO properties.</p>
-                </div>
-                <div class="skill">
-                    <h3><span><i class="fab fa-wordpress"></i></span>WordPress</h3>
-                    <p>Creation and debugging of web pages using CMS page builders, plugins, and themes.</p>
-                </div>
-                <div class="skill">
-                    <h3><span><i class="fab fa-git-square"></i></span>Git/Github</h3>
-                    <p>Deployment, maintenance, and management of code base using version control.</p>
-                </div>
-                <div class="skill">
-                    <h3><span><i class="fab fa-js"></i></span>JavaScript</h3>
-                    <p>Advance use of Vanilla JS to create programs and manipulate web pages. </p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- ========== PROJECT SECTION ========== -->
-    <section class="projects" id="projects__skip">
-        <div class="projects__container">
-            <div class="projects__heading">
-                <h2>Projects</h2>
-                <hr>
-            </div>
-            <div class="projects__section">
-                <div class="project">
-                    <div class="project__left">
-                        <h3>Chat App Landing Page</h3>
-                        <div class="stacks">
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>SCSS</li>
-                                <li>RESPONSIVE</li>
-                                <li>SEO</li>
-                                <li>ANIMATE.CSS</li>
-                                <li>CSS-ILLUSTRATION</li>
-                            </ul>
-                        </div>
-                        <div class="project__description">
-                            <p>This is a simple-looking, but complex animated landing page with a chat app illustration
-                                built with CSS.</p>
-                        </div>
-                    </div>
-                    <div class="project__right">
-                        <img src="images/project-1.jpg" alt="a mockup of chat app landing page">
-                        <div class="project__links">
-                            <ul>
-                                <li><a href="https://folathecoder.github.io/chat-app-landing-page/" target="_blank" aria-label="visit live project">LIVE
-                                        SITE<span><i class="fas fa-external-link-alt"></i></span></a></li>
-                                <li><a href="https://github.com/folathecoder/chat-app-landing-page"
-                                        target="_blank" aria-label="view github repo">GITHUB<span><i class="fas fa-external-link-alt"></i></span></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="project__left">
-                        <h3>Huddle Landing Page</h3>
-                        <div class="stacks">
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>RESPONSIVE</li>
-                                <li>ACCESSIBLE</li>
-                                <li>SEO</li>
-                                <li>MOBILE-FIRST</li>
-                            </ul>
-                        </div>
-                        <div class="project__description">
-                            <p>This is a mobile-first landing page strategically implemented using CSS Flexbox and Grid
-                                layout system.</p>
-                        </div>
-                    </div>
-                    <div class="project__right">
-                        <img src="images/project-2.jpg" alt="a mockup of huddle landing page">
-                        <div class="project__links">
-                            <ul>
-                                <li><a href="https://folathecoder.github.io/huddle-landing-page/" target="_blank" aria-label="visit live project">LIVE
-                                        SITE<span><i class="fas fa-external-link-alt"></i></span></a></li>
-                                <li><a href="https://github.com/folathecoder/huddle-landing-page"
-                                        target="_blank" aria-label="view github repo">GITHUB<span><i class="fas fa-external-link-alt"></i></span></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="project__left">
-                        <h3>Clipboard Landing Page</h3>
-                        <div class="stacks">
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>SCSS</li>
-                                <li>GIT</li>
-                                <li>RESPONSIVE WEB</li>
-                                <li>SEO</li>
-                            </ul>
-                        </div>
-                        <div class="project__description">
-                            <p>A responsive landing page built and maintained using SCSS. This page required advance
-                                use of Flexbox.</p>
-                        </div>
-                    </div>
-                    <div class="project__right">
-                        <img src="images/project-3.jpg" alt="a mockup of clipboard landing page">
-                        <div class="project__links">
-                            <ul>
-                                <li><a href="https://folathecoder.github.io/clipboard-landing-page-master/"
-                                        target="_blank" aria-label="visit live project">LIVE SITE<span><i
-                                                class="fas fa-external-link-alt"></i></span></a></li>
-                                <li><a href="https://github.com/folathecoder/clipboard-landing-page-master"
-                                        target="_blank" aria-label="view github repo">GITHUB<span><i class="fas fa-external-link-alt"></i></span></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="project">
-                    <div class="project__left">
-                        <h3>Fylo Landing Page</h3>
-                        <div class="stacks">
-                            <ul>
-                                <li>HTML</li>
-                                <li>CSS</li>
-                                <li>SCSS/SASS</li>
-                                <li>SEO</li>
-                                <li>RESPONSIVE WEB</li>
-                                <li>FORMS</li>
-                                <li>GIT</li>
-                            </ul>
-                        </div>
-                        <div class="project__description">
-                            <p>A desktop-first opitimized landing page built with Flexbox and CSS Grid. Responsiveness
-                                was implmented using SCSS.</p>
-                        </div>
-                    </div>
-                    <div class="project__right">
-                        <img src="images/project-4.jpg" alt="a mockup of fylo landing page">
-                        <div class="project__links">
-                            <ul>
-                                <li><a href="https://folathecoder.github.io/fylo-landing-page/" target="_blank" aria-label="visit live project">LIVE
-                                        SITE<span><i class="fas fa-external-link-alt"></i></span></a></li>
-                                <li><a href="https://github.com/folathecoder/fylo-landing-page"
-                                        target="_blank" aria-label="view github repo">GITHUB<span><i class="fas fa-external-link-alt"></i></span></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+        <!-- ========== CTA SECTION ========== -->
+        <section class="cta" id="cta__skip">
+            <div class="cta__container">
+                <div class="cts__heading">
+                    <h2>I'm always ready to collaborate, learn, and grow with a supportive team.</h2>
+                    <p>Reach out to me via <a href="mailto:folathecoder@gmail.com" target="_blank">Email</a>, <a
+                            href="https://twitter.com/folathecoder" target="_blank">Twitter</a>, or <a
+                            href="https://linkedin.com/in/akinloye-folarin" target="_blank">LinkedIn</a>. You can also
+                        hire
+                        me on <a href="https://www.fiverr.com/folathecoder" target="_blank">Fiverr</a> !</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- ========== CTA SECTION ========== -->
-    <section class="cta" id="cta__skip">
-        <div class="cta__container">
-            <div class="cts__heading">
-                <h2>I'm always ready to collaborate, learn, and grow with a supportive team.</h2>
-                <p>Reach out to me via <a href="mailto:folathecoder@gmail.com" target="_blank">Email</a>, <a
-                        href="https://twitter.com/folathecoder" target="_blank">Twitter</a>, or <a
-                        href="https://linkedin.com/in/akinloye-folarin" target="_blank">LinkedIn</a>. You can also hire
-                    me on <a href="https://www.fiverr.com/folathecoder" target="_blank">Fiverr</a> !</p>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- ========== FOOTER SECTION ========== -->
     <footer>
@@ -304,11 +316,6 @@
             </div>
         </div>
     </footer>
-
-    <!-- ========== SKIP LINK TO TOP OF THE PAGE ========== -->
-    <ul class="skip__links">
-        <li><a href="#top">Skip To Top</a></li>
-    </ul>
 
 </body>
 

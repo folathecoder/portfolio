@@ -50,6 +50,7 @@ $weight-bold: 700;
 $weight-light: 400;
 $weight-extra-light: 200;
 
+
 // ==== colors 
 $color-primary: hsl(214,100,50);
 $color-secondary: hsl(0,0,100);
@@ -253,21 +254,21 @@ a:focus {
 
 // === Skip Links (TOP)
 
-.skip__links {
-  margin: 0;
+// .skip__links {
+//   margin: 0;
 
-  a {
-    position: absolute;
-    top: rem(-30);
-    color: $color-secondary;
-    padding: rem(0) rem(10);
-  }
+//   a {
+//     position: absolute;
+//     top: rem(-30);
+//     color: $color-secondary;
+//     padding: rem(0) rem(10);
+//   }
 
-  a:focus {
-    position: relative;
-    top: 0;
-  }
-} 
+//   a:focus {
+//     position: relative;
+//     top: 0;
+//   }
+// } 
 
 // ==== Header Section 
 
@@ -502,13 +503,11 @@ header {
 
 
   &__container {
-    // background-color: yellow;
     max-width: $width-max;
     margin: $center-section;
     padding-bottom: rem(70);
   }
   &__heading {
-    // background-color: black;
     padding: rem(50) rem(0) rem(50) rem(0);
   }
   &__section {
@@ -554,12 +553,6 @@ header {
     font-size: rem(12);
     border-radius: rem(50);
     margin: rem(7) rem(10) rem(7) rem(0);
-  }
-
-  li:hover {
-    color: $color-secondary;
-    transition: 0.5s;
-    background-color: darken($color-primary, 12%);
   }
 }
 

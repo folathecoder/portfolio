@@ -52,15 +52,15 @@ $weight-extra-light: 200;
 
 
 // ==== colors 
-$color-primary: hsl(214,100,50);
+$color-primary: hsl(214, 100%, 50%);
 $color-secondary: hsl(0,0,100);
-$color-footer: rgba(255, 255, 255, 0.5);
+$color-footer: hsla(0, 0%, 100%, 0.5);
 $color-bg-primary: hsl(0,0,0);
 $color-bg-secondary: rgb(12, 12, 12);
 
 // === border 
 
-$border-primary: 1px solid rgba(196, 196, 196, 0.1);
+$border-primary: 1px solid hsla(0, 0%, 77%, 0.1);
 
 // ==== max-width
 

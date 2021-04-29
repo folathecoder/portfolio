@@ -1,11 +1,10 @@
 // ===== converts pixels to rem
-
 @function rem($size) {
   $remSize: $size / 16;
   @return #{$remSize}rem;
 }
 
-// ==== media-queries
+// ===== media-queries
 @mixin media-query ($size) {
   @if $size == desktop {
       @media screen and (min-width: 1200px) {
@@ -40,16 +39,13 @@
 }
 
 // ===== font family  
-
 $font-primary: 'Kanit', sans-serif;
 
 // ==== font weights 
-
 $weight-heavy: 800;
 $weight-bold: 700;
 $weight-light: 400;
 $weight-extra-light: 200;
-
 
 // ==== colors 
 $color-primary: hsl(214, 100%, 50%);
@@ -59,23 +55,18 @@ $color-bg-primary: hsl(0,0,0);
 $color-bg-secondary: rgb(12, 12, 12);
 
 // === border 
-
 $border-primary: 1px solid hsla(0, 0%, 77%, 0.1);
 
 // ==== max-width
-
 $width-max: 1250px;
 
 // ==== center section
-
 $center-section: 0px auto;
 
 // === section padding
 $section-padding: 0px 20px;
 
- 
  /* ========================= CSS Reset */
-
 *,
 *::before,
 *::after {
@@ -156,7 +147,6 @@ body {
   }
 
 // ==== typography 
-
 h1 {
   font-size: rem(50);
   line-height: rem(60);
@@ -201,7 +191,6 @@ p {
 }
 
 // ==== button
-
 .btn {
 
   background-color: $color-primary;
@@ -242,9 +231,7 @@ hr {
   border-color: $color-primary;
 }
 
-
 // ======= Accessibility Settings
-
 
 // === General Focus State
 a:focus {
@@ -309,7 +296,6 @@ header {
 }
 
 // ==== Hero Section 
-
 .hero {
   position: relative;
   top: rem(0);

@@ -617,11 +617,22 @@ footer {
     max-width: $width-max;
     margin: $center-section;
     padding: rem(20) rem(0);
+    display: flex;
+    justify-content: space-between;
 
     p {
       font-size: rem(13);
       color: $color-footer;
       font-weight: $weight-extra-light;
+    }
+    a {
+      color: $color-primary;
+      font-size: rem(13);
+      font-weight: $weight-extra-light;
+    }
+    a:hover {
+      text-decoration: underline;
+      transition: 0.5s;
     }
 }
 

@@ -637,11 +637,29 @@ footer {
   max-width: 1250px;
   margin: 0px auto;
   padding: 1.25rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer__container p {
   font-size: 0.8125rem;
   color: rgba(255, 255, 255, 0.5);
   font-weight: 200;
+}
+
+.footer__container a {
+  color: #006fff;
+  font-size: 0.8125rem;
+  font-weight: 200;
+}
+
+.footer__container a:hover {
+  text-decoration: underline;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 /*# sourceMappingURL=styles.css.map */

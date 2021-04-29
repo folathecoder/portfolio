@@ -618,7 +618,13 @@ footer {
     margin: $center-section;
     padding: rem(20) rem(0);
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+
+    @include media-query(tablet-mini) {
+      flex-direction: row;
+      justify-content: space-between;
+
+    }
 
     p {
       font-size: rem(13);

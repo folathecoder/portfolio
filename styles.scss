@@ -434,6 +434,10 @@ header {
   min-height: rem(0);
   padding: $section-padding;
 
+  i:hover {
+    color: $color-primary;
+  }
+
   &__container {
     max-width: $width-max;
     margin: $center-section;

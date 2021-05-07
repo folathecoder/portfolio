@@ -421,6 +421,10 @@ header {
   padding: 0px 20px;
 }
 
+.skills i:hover {
+  color: #006fff;
+}
+
 .skills__container {
   max-width: 1250px;
   margin: 0px auto;

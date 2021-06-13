@@ -76,6 +76,11 @@ select {
   font: inherit;
 }
 
+section {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
@@ -490,6 +495,14 @@ header {
 
 .skill span {
   margin-right: 0.9375rem;
+}
+
+.skill--invisible {
+  opacity: 0;
+  -webkit-transform: translateY(6.25rem);
+          transform: translateY(6.25rem);
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .projects {

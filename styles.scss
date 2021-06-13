@@ -137,6 +137,10 @@ select {
   font: inherit;
 }
 
+section {
+  transition: 1s;
+}
+
 body {
     min-height: 100vh;
     text-rendering: optimizeSpeed;
@@ -488,6 +492,14 @@ header {
   }
 }
 
+.skill--invisible {
+  opacity: 0;
+  transform: translateY(rem(100));
+  transition: 1s;
+}
+// .skill--visible {
+//   opacity: 1;
+// }
 // ==== Projects
 
 .projects {

@@ -665,6 +665,36 @@ footer {
     }
 }
 
+.jump--top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: rem(30);
+  background-color: $color-primary;
+  height: rem(60);
+  width: rem(60);
+  border-radius: 100%;
+  box-shadow: rem(0) rem(0) rem(10) black;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: 1s;
+  animation: spin 1.5s linear;
+
+  @keyframes spin {
+    0% {transform: rotateZ(0deg);}
+    100% {transform: rotateZ(720deg);}
+  }
+
+  &:hover {
+    transform: translateY(rem(-10));
+  }
+
+  i {
+    color: white;
+    font-size: rem(30);
+  }
+}
 
 // I kept things simple with the UI, I avoided using distracting animations and pop ups. My goal was to allow a recruiter glance through my portfolio under 20 seconds. 
 

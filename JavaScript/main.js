@@ -1,16 +1,16 @@
 'use strict';
 
+//TODO: Declare all required variables
 const allSections = document.querySelectorAll('section');
-// console.log(skills);
+const headerSection = document.querySelector('.header');
+const jumpTop = document.querySelector('.jump--top');
 
+//TODO: Section Fade On-Scroll Animation
 const sectionCallbacks = function(entries, observer) {
     const [entry] = entries;
-    console.log(entry.target);
     if (!entry.isIntersecting) return;
     entry.target.classList.remove('skill--invisible');
-
     observer.unobserve(entry.target);
-
 }
 
 const sectionOptions =  {
@@ -25,3 +25,15 @@ allSections.forEach(function (section) {
     sectionObserver.observe(section);
     section.classList.add('skill--invisible');
 });
+
+//TODO: Smooth Scroll To The Top
+
+console.log(headerSection);
+
+console.log(jumpTop);
+jumpTop.addEventListener('click', e => {
+    if (e.target.closest('.jump--top')) {
+        console.log(e.target);
+        headerSection.scrollIntoView({behavior:"smooth"});
+    }
+})

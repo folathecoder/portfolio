@@ -680,6 +680,7 @@ footer {
   place-items: center;
   transition: 1s;
   animation: spin 1.5s linear;
+  display: none;
 
   @keyframes spin {
     0% {transform: rotateZ(0deg);}

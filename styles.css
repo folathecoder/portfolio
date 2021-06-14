@@ -723,6 +723,7 @@ footer {
   transition: 1s;
   -webkit-animation: spin 1.5s linear;
           animation: spin 1.5s linear;
+  display: none;
 }
 
 @-webkit-keyframes spin {

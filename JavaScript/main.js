@@ -67,14 +67,13 @@ skillObserver.observe(skillSection);
 
 //TODO: Fade Projects In 
 
-
 //* Automatically add transitions on all .skill elements
 
 for (let i = 0; i < projects.length; i++ ) {
     projects[i].style.transition = `${i * 1}s`;
 }
 
-//* Add opacity to project items
+//* Add opacity to .project items
 projects.forEach(project => {
     project.classList.add('skill--invisible');
 })

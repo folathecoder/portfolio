@@ -65,7 +65,7 @@ const skillObserver = new IntersectionObserver(skillCallback, skillOptions);
 skillObserver.observe(skillSection);
 
 
-//TODO: Fade Projects In 
+//TODO: Fade Projects In Smoothly
 
 //* Automatically add transitions on all .skill elements
 

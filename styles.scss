@@ -48,7 +48,8 @@ $weight-light: 400;
 $weight-extra-light: 200;
 
 // ==== colors 
-$color-primary: #1a3bbd;
+// $color-primary: #1a3bbd;
+$color-primary: #00a1ff;
 $color-secondary: hsl(0,0,100);
 $color-footer: hsla(0, 0%, 100%, 0.5);
 $color-bg-primary: hsl(0,0,0);
@@ -482,7 +483,8 @@ header {
   // border-radius: rem(50);
   border-radius: rem(10);
   padding: rem(25);
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.589);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.11);
+  background-color: $color-bg-primary;
   
   p {
     margin-top: rem(20);
@@ -562,6 +564,7 @@ header {
     padding: rem(2) rem(10);
     box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.438);
     background-color: $color-primary;
+    color: $color-bg-primary;
     font-size: rem(12);
     border-radius: rem(50);
     margin: rem(7) rem(10) rem(7) rem(0);

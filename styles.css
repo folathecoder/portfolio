@@ -47,16 +47,16 @@ a {
 
 a:hover {
   transition: 0.5s;
-  color: #132a87;
+  color: #007ac2;
 }
 
 i {
-  color: #1a3bbd;
+  color: #00a1ff;
 }
 
 i:hover {
   transition: 0.5s;
-  color: #132a87;
+  color: #007ac2;
 }
 
 img,
@@ -88,7 +88,7 @@ body {
 h1 {
   font-size: 3.125rem;
   line-height: 3.75rem;
-  color: #1a3bbd;
+  color: #00a1ff;
   font-weight: 400;
 }
 @media screen and (min-width: 602px) {
@@ -138,7 +138,7 @@ p {
 }
 
 .btn {
-  background-color: #1a3bbd;
+  background-color: #00a1ff;
   padding: 0.4375rem 1.25rem;
   border-radius: 3.125rem;
   color: white;
@@ -163,18 +163,18 @@ p {
 .btn:hover {
   color: white;
   transition: 0.5s;
-  background-color: #132a87;
+  background-color: #007ac2;
 }
 
 hr {
-  color: #1a3bbd;
-  background-color: #1a3bbd;
+  color: #00a1ff;
+  background-color: #00a1ff;
   height: 0.25rem;
   width: 6.25rem;
   margin: 1.5625rem 0rem 0rem 0rem;
   text-align: left;
   border-radius: 3.125rem;
-  border-color: #1a3bbd;
+  border-color: #00a1ff;
 }
 
 a:focus {
@@ -206,7 +206,7 @@ header {
 }
 .logo a {
   font-size: 1.75rem;
-  color: #1a3bbd;
+  color: #00a1ff;
   font-weight: 400;
   border-right: 1px solid rgba(196, 196, 196, 0.1);
   padding-right: 0.9375rem;
@@ -264,7 +264,7 @@ header {
 .hero__intro a {
   font-size: 1rem;
   line-height: 1.25rem;
-  color: #1a3bbd;
+  color: #00a1ff;
   font-weight: 400;
   text-decoration: underline;
 }
@@ -369,7 +369,7 @@ header {
   padding: 0px 20px;
 }
 .skills i:hover {
-  color: #1a3bbd;
+  color: #00a1ff;
 }
 .skills__container {
   max-width: 1250px;
@@ -401,7 +401,8 @@ header {
 .skill {
   border-radius: 0.625rem;
   padding: 1.5625rem;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.589);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.11);
+  background-color: black;
 }
 .skill p {
   margin-top: 1.25rem;
@@ -473,7 +474,8 @@ header {
 .stacks li {
   padding: 0.125rem 0.625rem;
   box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.438);
-  background-color: #1a3bbd;
+  background-color: #00a1ff;
+  color: black;
   font-size: 0.75rem;
   border-radius: 3.125rem;
   margin: 0.4375rem 0.625rem 0.4375rem 0rem;
@@ -492,7 +494,7 @@ header {
 }
 .project__links a {
   text-decoration: underline;
-  color: #1a3bbd;
+  color: #00a1ff;
 }
 .project__links i {
   margin-left: 0.3125rem;
@@ -526,7 +528,7 @@ header {
 .cta a {
   font-size: 1rem;
   line-height: 1.25rem;
-  color: #1a3bbd;
+  color: #00a1ff;
   font-weight: 400;
   text-decoration: underline;
 }
@@ -563,7 +565,7 @@ footer {
   font-weight: 200;
 }
 .footer__container a {
-  color: #1a3bbd;
+  color: #00a1ff;
   font-size: 0.8125rem;
   font-weight: 200;
 }

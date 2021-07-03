@@ -11,22 +11,22 @@ const projectSection = document.querySelector('.projects');
 const projects = document.querySelectorAll('.project');
 
 //TODO: Section Fade On-Scroll Animation
-// const sectionCallbacks = function(entries, observer) {
-//     const [entry] = entries;
-//     if (!entry.isIntersecting) return;
-//     entry.target.classList.remove('skill--invisible');
-//     observer.unobserve(entry.target);
-// }
-// const sectionOptions =  {
-//     root: null,
-//     threshold: 0.1,
-// }
-// const sectionObserver = new IntersectionObserver(sectionCallbacks, sectionOptions);
+const sectionCallbacks = function(entries, observer) {
+    const [entry] = entries;
+    if (!entry.isIntersecting) return;
+    entry.target.classList.remove('skill--invisible');
+    observer.unobserve(entry.target);
+}
+const sectionOptions =  {
+    root: null,
+    threshold: 0.1,
+}
+const sectionObserver = new IntersectionObserver(sectionCallbacks, sectionOptions);
 
-// allSections.forEach(function (section) {
-//     sectionObserver.observe(section);
-//     section.classList.add('skill--invisible');
-// });
+allSections.forEach(function (section) {
+    sectionObserver.observe(section);
+    section.classList.add('skill--invisible');
+});
 
 //TODO: Fade Skills In 
 

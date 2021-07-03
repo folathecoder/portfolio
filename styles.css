@@ -47,16 +47,16 @@ a {
 
 a:hover {
   transition: 0.5s;
-  color: #007ac2;
+  color: #007bc2;
 }
 
 i {
-  color: #00a1ff;
+  color: #00a2ff;
 }
 
 i:hover {
   transition: 0.5s;
-  color: #007ac2;
+  color: #007bc2;
 }
 
 img,
@@ -88,7 +88,7 @@ body {
 h1 {
   font-size: 3.125rem;
   line-height: 3.75rem;
-  color: #00a1ff;
+  color: #00a2ff;
   font-weight: 400;
 }
 @media screen and (min-width: 602px) {
@@ -138,7 +138,7 @@ p {
 }
 
 .btn {
-  background-color: #00a1ff;
+  background-color: #00a2ff;
   padding: 0.4375rem 1.25rem;
   border-radius: 0.625rem;
   color: black;
@@ -167,14 +167,14 @@ p {
 }
 
 hr {
-  color: #00a1ff;
-  background-color: #00a1ff;
+  color: #00a2ff;
+  background-color: #00a2ff;
   height: 0.25rem;
   width: 6.25rem;
   margin: 1.5625rem 0rem 0rem 0rem;
   text-align: left;
   border-radius: 3.125rem;
-  border-color: #00a1ff;
+  border-color: #00a2ff;
 }
 
 a:focus {
@@ -186,7 +186,7 @@ header {
   top: 0px;
   width: 100%;
   min-height: 0rem;
-  padding: 0px 20px;
+  padding: 0rem 1.25rem;
   background-color: #0c0c0c;
   border-bottom: 1px solid rgba(196, 196, 196, 0.1);
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.589);
@@ -194,8 +194,8 @@ header {
 }
 
 .header__container {
-  max-width: 1250px;
-  margin: 0px auto;
+  max-width: 78.125rem;
+  margin: 0rem auto;
   min-height: 4.375rem;
   display: flex;
   align-items: center;
@@ -206,7 +206,7 @@ header {
 }
 .logo a {
   font-size: 1.75rem;
-  color: #00a1ff;
+  color: #00a2ff;
   font-weight: 400;
   border-right: 1px solid rgba(196, 196, 196, 0.1);
   padding-right: 0.9375rem;
@@ -228,11 +228,11 @@ header {
   top: 0rem;
   max-width: 100%;
   min-height: 0rem;
-  padding: 0px 20px;
+  padding: 0rem 1.25rem;
 }
 .hero__container {
-  max-width: 1250px;
-  margin: 0px auto;
+  max-width: 78.125rem;
+  margin: 0rem auto;
   border-bottom: 1px solid rgba(196, 196, 196, 0.1);
   display: flex;
   flex-direction: column;
@@ -264,7 +264,7 @@ header {
 .hero__intro a {
   font-size: 1rem;
   line-height: 1.25rem;
-  color: #00a1ff;
+  color: #00a2ff;
   font-weight: 400;
   text-decoration: underline;
 }
@@ -366,14 +366,14 @@ header {
 .skills {
   max-width: 100%;
   min-height: 0rem;
-  padding: 0px 20px;
+  padding: 0rem 1.25rem;
 }
 .skills i:hover {
-  color: #00a1ff;
+  color: #00a2ff;
 }
 .skills__container {
-  max-width: 1250px;
-  margin: 0px auto;
+  max-width: 78.125rem;
+  margin: 0rem auto;
 }
 .skills__heading {
   padding: 4.375rem 0rem 3.125rem 0rem;
@@ -424,12 +424,12 @@ header {
   max-width: 100%;
   min-height: 0rem;
   background-color: black;
-  padding: 0px 20px;
+  padding: 0rem 1.25rem;
   margin: 3.125rem 0rem;
 }
 .projects__container {
-  max-width: 1250px;
-  margin: 0px auto;
+  max-width: 78.125rem;
+  margin: 0rem auto;
   padding-bottom: 4.375rem;
 }
 .projects__heading {
@@ -474,7 +474,7 @@ header {
 .stacks li {
   padding: 0.125rem 0.625rem;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.774);
-  background-color: #00a1ff;
+  background-color: #00a2ff;
   color: black;
   font-size: 0.75rem;
   border-radius: 3.125rem;
@@ -494,7 +494,7 @@ header {
 }
 .project__links a {
   text-decoration: underline;
-  color: #00a1ff;
+  color: #00a2ff;
 }
 .project__links i {
   margin-left: 0.3125rem;
@@ -503,12 +503,12 @@ header {
 .cta {
   max-width: 100%;
   min-height: 0rem;
-  padding: 0px 20px;
+  padding: 0rem 1.25rem;
   margin: 1.25rem 0rem;
 }
 .cta__container {
-  max-width: 1250px;
-  margin: 0px auto;
+  max-width: 78.125rem;
+  margin: 0rem auto;
   padding: 3.125rem 0rem;
 }
 @media screen and (min-width: 786px) {
@@ -528,7 +528,7 @@ header {
 .cta a {
   font-size: 1rem;
   line-height: 1.25rem;
-  color: #00a1ff;
+  color: #00a2ff;
   font-weight: 400;
   text-decoration: underline;
 }
@@ -542,13 +542,13 @@ footer {
   max-width: 100%;
   min-height: 0rem;
   background-color: black;
-  padding: 0px 20px;
+  padding: 0rem 1.25rem;
   border-top: 1px solid rgba(196, 196, 196, 0.1);
 }
 
 .footer__container {
-  max-width: 1250px;
-  margin: 0px auto;
+  max-width: 78.125rem;
+  margin: 0rem auto;
   padding: 1.25rem 0rem;
   display: flex;
   flex-direction: column;
@@ -565,7 +565,7 @@ footer {
   font-weight: 200;
 }
 .footer__container a {
-  color: #00a1ff;
+  color: #00a2ff;
   font-size: 0.8125rem;
   font-weight: 200;
 }

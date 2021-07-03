@@ -140,8 +140,8 @@ p {
 .btn {
   background-color: #00a1ff;
   padding: 0.4375rem 1.25rem;
-  border-radius: 3.125rem;
-  color: white;
+  border-radius: 0.625rem;
+  color: black;
 }
 @media screen and (min-width: 992px) {
   .btn {
@@ -151,19 +151,19 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .btn {
-    padding: 0.75rem 3.125rem;
+    padding: 0.5625rem 1.25rem;
     font-size: 1rem;
   }
 }
 .btn i {
-  color: white;
+  color: black;
   margin-left: 0.3125rem;
 }
 
 .btn:hover {
-  color: white;
   transition: 0.5s;
-  background-color: #007ac2;
+  color: black;
+  background-color: #0091e6;
 }
 
 hr {
@@ -473,7 +473,7 @@ header {
 }
 .stacks li {
   padding: 0.125rem 0.625rem;
-  box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.438);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.774);
   background-color: #00a1ff;
   color: black;
   font-size: 0.75rem;

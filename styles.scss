@@ -200,8 +200,9 @@ p {
 
   background-color: $color-primary;
   padding: rem(7) rem(20);
-  border-radius: rem(50);
-  color: $color-secondary;
+  border-radius: rem(10);
+  color: $color-bg-primary;
+  // display: none;
 
   @include media-query(tablet) {
     padding: rem(10) rem(45);
@@ -209,20 +210,20 @@ p {
   }
   
   @include media-query(desktop) {
-    padding: rem(12) rem(50);
+    padding: rem(9) rem(20);
     font-size: rem(16);
   }
 
   i {
-    color: $color-secondary;
+    color: $color-bg-primary;
     margin-left: rem(5);
   }
 }
 
 .btn:hover {
-  color: $color-secondary;
   transition: 0.5s;
-  background-color: darken($color-primary, 12%);
+  color: $color-bg-primary;
+  background-color: darken($color-primary, 5%);
 }
 
 hr {
@@ -479,8 +480,6 @@ header {
 }
 
 .skill {
-  // border: $border-primary;
-  // border-radius: rem(50);
   border-radius: rem(10);
   padding: rem(25);
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.11);
@@ -541,7 +540,6 @@ header {
 }
 
 .project {
-  // border: $border-primary;
   padding: rem(40) rem(25);
   border-radius: rem(10);
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.589);
@@ -562,7 +560,7 @@ header {
 
   li {
     padding: rem(2) rem(10);
-    box-shadow: 0px 0px 10px rgba(0, 0, 255, 0.438);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.774);
     background-color: $color-primary;
     color: $color-bg-primary;
     font-size: rem(12);

@@ -189,7 +189,8 @@ header {
   padding: 0px 20px;
   background-color: #0c0c0c;
   border-bottom: 1px solid rgba(196, 196, 196, 0.1);
-  z-index: 1;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.589);
+  z-index: 1000;
 }
 
 .header__container {
@@ -398,9 +399,9 @@ header {
 }
 
 .skill {
-  border: 1px solid rgba(196, 196, 196, 0.1);
-  border-radius: 3.125rem;
+  border-radius: 0.625rem;
   padding: 1.5625rem;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.589);
 }
 .skill p {
   margin-top: 1.25rem;
@@ -454,8 +455,9 @@ header {
 }
 
 .project {
-  border: 1px solid rgba(196, 196, 196, 0.1);
   padding: 2.5rem 1.5625rem;
+  border-radius: 0.625rem;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.589);
   background-color: #0c0c0c;
 }
 .project__description {

@@ -93,9 +93,6 @@ const projectObserver = new IntersectionObserver(projectCallback, projectOptions
 projectObserver.observe(projectSection);
 
 
-
-
-
 //TODO: Smooth Scroll To The Top
 
 console.log(headerSection);

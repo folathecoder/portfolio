@@ -1,6 +1,6 @@
 ## Welcome To My Portfolio! 👋
 
-Thank you for checking out my portfolio. Kindly download and explore my [Frontend Developer CV](https://folathecoder.github.io/portfolio-V1/folarin-akinloye.pdf)!
+Thank you for checking out my portfolio. Kindly download and explore my [Frontend Developer CV](https://folathecoder.github.io/portfolio-V1/Akinloye-Folarin-(Frontend-Developer).pdf)!
 
 I am always available to join a supportive and motivated tech team!  💪💪
 

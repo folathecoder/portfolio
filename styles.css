@@ -38,6 +38,7 @@ a {
   text-decoration: none;
   font-size: 0.875rem;
   font-weight: 400;
+  color: #00a2ff;
 }
 
 @media screen and (min-width: 1200px) {
@@ -512,6 +513,7 @@ header {
 .skill-icon img {
   width: 1.65625rem;
   height: auto;
+  display: inline-block;
 }
 
 .projects {

@@ -484,9 +484,11 @@ header {
 // }
 
 .skill-icon img {
-  width: rem(26.5);
+  width: rem(30);
   height: auto;
   display: inline-block;
+  border-radius: rem(2);
+  margin-bottom: rem(-4);
 }
 
 // ==== Projects

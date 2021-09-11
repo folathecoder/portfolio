@@ -511,9 +511,11 @@ header {
 }
 
 .skill-icon img {
-  width: 1.65625rem;
+  width: 1.875rem;
   height: auto;
   display: inline-block;
+  border-radius: 0.125rem;
+  margin-bottom: -0.25rem;
 }
 
 .projects {

@@ -1,0 +1,126 @@
+// ==== Projects
+
+.projects {
+  max-width: 100%;
+  min-height: rem(0);
+  background-color: $color-bg-primary;
+  padding: $section-padding;
+  margin: rem(50) rem(0);
+
+
+  &__container {
+    max-width: $width-max;
+    margin: $center-section;
+    padding-bottom: rem(70);
+  }
+  &__heading {
+    padding: rem(50) rem(0) rem(50) rem(0);
+  }
+  &__section {
+    margin: rem(0) rem(0);
+    display: grid;
+    gap: rem(15);
+    grid-template-columns: repeat(auto-fit, min-max(1fr, 500px));
+    grid-template-rows: 1fr;
+
+    @include media-query(tablet-mini) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+    }
+    @include media-query(desktop) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+    }
+  }
+}
+
+.project {
+  padding: rem(40) rem(25);
+  border-radius: rem(10);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.589);
+  background-color: $color-bg-secondary;
+
+  &__description {
+    padding-bottom: rem(30);
+  }
+}
+
+.stacks {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: rem(10) rem(0);
+    min-height: rem(0);
+  }
+
+  li {
+    padding: rem(2) rem(10);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.774);
+    background-color: $color-primary;
+    color: $color-bg-primary;
+    font-size: rem(12);
+    border-radius: rem(50);
+    margin: rem(7) rem(10) rem(7) rem(0);
+  }
+}
+
+.project__links {
+
+  ul {
+    display: flex;
+  }
+  li {
+    flex: 1;
+    text-align: right;
+  }
+  li:first-of-type {
+    text-align: left;
+    margin-left: rem(-40);
+  }
+  a {
+    text-decoration: underline;
+    color: $color-primary;
+  }
+  i {
+    margin-left: rem(5);
+  }
+}
+
+// ==== Call to action
+.cta {
+  max-width: 100%;
+  min-height: rem(0);
+  padding: $section-padding;
+  margin: rem(20) rem(0);
+
+
+  &__container {
+    max-width: $width-max;
+    margin: $center-section;
+    padding: rem(50) rem(0);
+
+    @include media-query(tablet-mini) {
+      text-align: center;
+      padding: rem(50) rem(150);
+    }
+    @include media-query(desktop) {
+      padding: rem(50) rem(300);
+    }
+
+  }
+  h2 {
+    line-height: rem(40);
+  }
+
+  a {
+    font-size: rem(16);
+    line-height: rem(20);
+    color: $color-primary;
+    font-weight: $weight-light;
+    text-decoration: underline;
+  }
+  p{
+    margin: rem(20) rem(0);
+    letter-spacing: 1px;
+  }
+}

@@ -1,0 +1,134 @@
+// ==== Hero Section 
+.hero {
+  position: relative;
+  top: rem(0);
+  max-width: 100%;
+  min-height: rem(0);
+  padding: $section-padding;
+
+  &__container {
+    max-width: $width-max;
+    margin: $center-section;
+    border-bottom: $border-primary;
+    display: flex;
+    flex-direction: column;
+
+    @include media-query(tablet-mini) {
+      flex-direction: row;
+      align-items: center;
+      padding: rem(100) rem(0);
+    }
+  }
+
+  &__occupation {
+    min-height: rem(0);
+    padding: rem(50) rem(0) rem(20) rem(0);
+
+    @include media-query(tablet-mini) {
+      flex: 1;
+    }
+    h1 span {
+      color: $color-secondary;
+    }
+  }
+  &__intro {
+
+    @include media-query(tablet-mini) {
+      flex: 1;
+    }
+
+    a {
+      font-size: rem(16);
+      line-height: rem(20);
+      color: $color-primary;
+      font-weight: $weight-light;
+      text-decoration: underline;
+
+      @include media-query(large-mobile) {
+        font-size: rem(17);
+        line-height: rem(26);
+      }
+
+      @include media-query(tablet-mini) {
+        font-size: rem(18);
+        line-height: rem(30);
+      }
+
+      @include media-query(desktop) {
+        font-size: rem(25);
+        line-height: rem(40);
+      }
+    }
+  }
+  &__socials {
+
+    ul {
+      display: flex;
+      padding: rem(20) rem(0);
+    }
+    li {
+      flex: 1;
+      text-align: left;
+      transition: all 0.5s ease-in-out;
+
+      @include media-query(large-mobile) {
+        flex: 0;
+        margin-right: rem(25);
+      }
+      @include media-query(desktop) {
+        &:hover {
+          transform: translateY(rem(-5));
+          transition: all 0.5s ease-in-out;
+        }
+      }
+    }
+    i {
+      font-size: rem(40);
+    }
+  }
+}
+.para-mg-top {
+  margin-top: rem(10);
+}
+.no__mobile {
+  display: none;
+
+  @include media-query(tablet-mini) {
+    display: block;
+  }
+}
+.no__desktop {
+  @include media-query(tablet-mini){
+    display: none;
+  }
+}
+.p__hero {
+  font-size: rem(16);
+  line-height: rem(25);
+  color: $color-secondary;
+  font-weight: $weight-light;
+
+  @include media-query(large-mobile) {
+    font-size: rem(17);
+    line-height: rem(26);
+  }
+
+  @include media-query(tablet-mini) {
+    font-size: rem(18);
+    line-height: rem(30);
+  }
+
+  @include media-query(desktop) {
+    font-size: rem(25);
+    line-height: rem(40);
+  }
+}
+
+.desktop__socials {
+  margin-top: rem(50);
+
+  li {
+    flex: 0;
+    margin-right: rem(30);
+  }
+}

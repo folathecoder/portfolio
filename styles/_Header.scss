@@ -1,0 +1,39 @@
+// ==== Header Section 
+
+header {
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  min-height: rem(0);
+  padding: $section-padding;
+  background-color: $color-bg-secondary;
+  border-bottom: $border-primary;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.589);
+  z-index: 1000;
+}
+.header__container {
+  max-width: $width-max;
+  margin: $center-section;
+  min-height: rem(70);
+  display: flex;
+  align-items: center;
+}
+.logo {
+  flex: 1;
+  a {
+    font-size: rem(28);
+    color: $color-primary;
+    font-weight: $weight-light;
+    border-right: $border-primary;
+    padding-right: rem(15);
+  }
+}
+.header__button {
+  flex: 6;
+  text-align: right;
+  display: none;
+
+  @include media-query(mobile) {
+    display: block;
+  }
+}

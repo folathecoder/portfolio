@@ -1,0 +1,27 @@
+// ===== font family  
+$font-primary: 'Kanit', sans-serif;
+
+// ==== font weights 
+$weight-heavy: 800;
+$weight-bold: 700;
+$weight-light: 400;
+$weight-extra-light: 200;
+
+// ==== colors 
+$color-primary: hsl(202, 100%, 50%);
+$color-secondary: hsl(0,0,100);
+$color-footer: hsla(0, 0%, 100%, 0.5);
+$color-bg-primary: hsl(0,0,0);
+$color-bg-secondary: rgb(12, 12, 12);
+
+// === border 
+$border-primary: 1px solid hsla(0, 0%, 77%, 0.1);
+
+// ==== max-width
+$width-max: rem(1250);
+
+// ==== center section
+$center-section: rem(0) auto;
+
+// === section padding
+$section-padding: rem(0) rem(20);

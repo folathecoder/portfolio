@@ -1,0 +1,28 @@
+// ==== button
+.btn {
+  background-color: $color-primary;
+  padding: rem(7) rem(20);
+  border-radius: rem(10);
+  color: $color-bg-primary;
+
+  @include media-query(tablet) {
+    padding: rem(10) rem(45);
+    font-size: rem(16);
+  }
+  
+  @include media-query(desktop) {
+    padding: rem(9) rem(20);
+    font-size: rem(16);
+  }
+
+  i {
+    color: $color-bg-primary;
+    margin-left: rem(5);
+  }
+}
+
+.btn:hover {
+  transition: 0.5s;
+  color: $color-bg-primary;
+  background-color: darken($color-primary, 5%);
+}

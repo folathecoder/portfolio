@@ -1,0 +1,37 @@
+// ===== Footer Section
+footer {
+  bottom: 0;
+  max-width: 100%;
+  min-height: rem(0);
+  background-color: $color-bg-primary;
+  padding: $section-padding;
+  border-top: $border-primary;
+}
+
+.footer__container {
+    max-width: $width-max;
+    margin: $center-section;
+    padding: rem(20) rem(0);
+    display: flex;
+    flex-direction: column;
+
+    @include media-query(tablet-mini) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    p {
+      font-size: rem(13);
+      color: $color-footer;
+      font-weight: $weight-extra-light;
+    }
+    a {
+      color: $color-primary;
+      font-size: rem(13);
+      font-weight: $weight-extra-light;
+    }
+    a:hover {
+      text-decoration: underline;
+      transition: 0.5s;
+    }
+}

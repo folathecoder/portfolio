@@ -1,0 +1,61 @@
+// ==== typography 
+h1 {
+  font-size: rem(50);
+  line-height: rem(60);
+  color: $color-primary;
+  font-weight: $weight-light;
+
+  @include media-query(large-mobile) {
+    font-size: rem(60);
+    line-height: rem(70);
+  }
+  @include media-query(tablet-mini) {
+    font-size: rem(80);
+    line-height: rem(90);
+  }
+  @include media-query(desktop) {
+    font-size: rem(100);
+    line-height: rem(100);
+  }
+}
+h2 {
+  font-size: rem(32);
+  line-height: rem(32);
+  color: $color-secondary;
+  font-weight: $weight-light;
+}
+h3 {
+  font-size: rem(25);
+  line-height: rem(25);
+  color: $color-secondary;
+  font-weight: $weight-light;
+}
+p {
+  font-size: rem(16);
+  line-height: rem(25);
+  color: $color-secondary;
+  font-weight: $weight-light;
+
+  @include media-query(desktop) {
+    font-size: rem(18);
+    line-height: rem(27);
+  }
+}
+
+hr {
+  color: $color-primary;
+  background-color: $color-primary;
+  height: rem(4);
+  width: rem(100);
+  margin: rem(25) rem(0) rem(0) rem(-0);
+  text-align: left;
+  border-radius: rem(50);
+  border-color: $color-primary;
+}
+
+// ======= Accessibility Settings
+
+// === General Focus State
+a:focus {
+  outline: rem(3) solid hsl(60, 100%, 50%);   
+}

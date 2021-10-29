@@ -1,0 +1,75 @@
+/* ========================= CSS Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  font-size: rem(14);
+  font-weight: $weight-light;
+  color: $color-primary;
+
+  @include media-query(desktop) {
+    font-size: rem(16);
+    line-height: rem(25);
+  }
+}
+a:hover {
+  transition: 0.5s;
+  color: darken($color-primary, 12%);
+}
+
+i {
+  color: $color-primary;
+}
+
+i:hover {
+  transition: 0.5s;
+  color: darken($color-primary, 12%);
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+section {
+  transition: 1s;
+}

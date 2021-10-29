@@ -1,0 +1,68 @@
+// ==== Skills & Tools Section
+
+.skills {
+  max-width: 100%;
+  min-height: rem(0);
+  padding: $section-padding;
+
+  i:hover {
+    color: $color-primary;
+  }
+
+  &__container {
+    max-width: $width-max;
+    margin: $center-section;
+  }
+
+  &__heading {
+    padding: rem(70) rem(0) rem(50) rem(0);
+  }
+  
+  &__section {
+    margin: rem(0) rem(0);
+    display: grid;
+    gap: rem(15);
+    grid-template-columns: repeat(auto-fit, min-max(1fr, 500px));
+    grid-template-rows: 1fr;
+
+    @include media-query(tablet-mini) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr;
+    }
+    @include media-query(desktop) {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr;
+    }
+  }
+}
+
+.skill {
+  border-radius: rem(10);
+  padding: rem(25);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.11);
+  background-color: $color-bg-primary;
+  
+  p {
+    margin-top: rem(20);
+  }
+  i {
+    font-size: rem(30);
+  }
+  span {
+    margin-right: rem(15);
+  }
+}
+
+.skill--invisible {
+  opacity: 0;
+  transform: translateY(rem(100));
+  transition: 1s;
+}
+
+.skill-icon img {
+  width: rem(30);
+  height: auto;
+  display: inline-block;
+  border-radius: rem(2);
+  margin-bottom: rem(-4);
+}

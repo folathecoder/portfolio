@@ -1,1 +1,9 @@
-console.log("Hello world");
+Hello()
+
+
+console.log("Hello{} world");
+function Hello () {
+
+}
+
+//hoisting
